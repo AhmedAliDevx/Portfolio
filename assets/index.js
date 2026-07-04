@@ -82,8 +82,8 @@ const whatHeaderText2 = document.querySelector(".what-header-text-2");
 observer.observe(whatHeaderText2);
 
 /* Project Section */
-const ProjectContainer = document.querySelector(".project-container");
-observer.observe(ProjectContainer);
+const ProjectContainers = document.querySelectorAll(".project-container");
+ProjectContainers.forEach((container) => observer.observe(container));
 
 /* Highlight Section */
 const highlightKicker = document.querySelector(".highlight-kicker");
